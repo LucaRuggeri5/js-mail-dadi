@@ -16,3 +16,19 @@ const email = [
   'micheal.jackson@gmail.com'
 ]
 
+const emailPersonale = prompt("Inserisci email");
+
+let correct = false;
+
+for (let i = 0; i < email.length; i++) {
+  if (emailPersonale === email[i]) {
+    correct = true;
+  }
+}
+
+if (correct) {
+  console.log("accesso riuscito")
+}
+else{
+  console.log("accesso negato");
+}
